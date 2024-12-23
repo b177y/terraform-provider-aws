@@ -563,7 +563,6 @@ func resourceInstance() *schema.Resource {
 						"http_protocol_ipv6": {
 							Type:             schema.TypeString,
 							Optional:         true,
-							Default:          awstypes.InstanceMetadataProtocolStateDisabled,
 							ValidateDiagFunc: enum.Validate[awstypes.InstanceMetadataProtocolState](),
 						},
 						"http_put_response_hop_limit": {
